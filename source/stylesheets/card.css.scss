@@ -1,7 +1,7 @@
 .card {
   display: flex;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  margin: 16px;
+  margin: 16px 16px 64px 16px;
   border-radius: 4px;
   background-color: white;
   img {
@@ -19,7 +19,7 @@
 .card-skills {
   display: flex;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  margin: 16px;
+  margin: 16px 16px 64px 16px;
   border-radius: 4px;
   background-color: white;
   justify-content: space-around;

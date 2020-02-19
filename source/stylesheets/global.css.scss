@@ -1,11 +1,12 @@
 $base-color: #1761a0;
+$secondary-color: #e07f00;
+$header-font: 'Ubuntu Condensed';
+$text-font: 'Roboto';
 
 body {
-  // color:
-  // color2: #e07f00;
   color: black;
-  margin-top: 0px;
-  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  font-family: $text-font, sans-serif;
   background: linear-gradient(to left bottom, rgb(200, 200, 200), white);
 }
 
@@ -15,7 +16,7 @@ a {
 
 h1 {
   margin-left: 16px;
-  font-family: 'Ubuntu Condensed', cursive;
+  font-family: $header-font, cursive;
   font-weight: normal;
   font-size: 24px;
   color: $base-color;
