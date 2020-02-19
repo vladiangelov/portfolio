@@ -1,9 +1,12 @@
+$base-color: #1761a0;
+
 body {
-  // color: #1761a0;
+  // color:
   // color2: #e07f00;
   color: black;
   margin-top: 0px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to left bottom, rgb(200, 200, 200), white);
 }
 
 a {
@@ -11,8 +14,15 @@ a {
 }
 
 h1 {
-  font-family: 'Sriracha', cursive;
+  margin-left: 16px;
+  font-family: 'Ubuntu Condensed', cursive;
   font-weight: normal;
+  font-size: 24px;
+  color: $base-color;
+}
+
+h3 {
+  color: $base-color;
 }
 
 .container {

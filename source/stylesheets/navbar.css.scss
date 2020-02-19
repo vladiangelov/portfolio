@@ -5,6 +5,7 @@
   margin: 0px;
   padding: 16px 8px;
   justify-content: space-between;
+  box-shadow-bottom: 2px 1px black;
 }
 
 .navbar-logo {
@@ -12,7 +13,7 @@
   display: flex;
   align-items: center;
   font-size: 32px;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Ubuntu Condensed', cursive;
   img {
     width: 80px;
     height: 40px;
@@ -22,14 +23,15 @@
 .navbar-menu {
   display: flex;
   align-items: center;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Ubuntu Condensed', cursive;
   padding-right: 64px;
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
   text-align: center;
-  padding: 14px 16px;
+  margin: 10px 10px;
+  padding: 4px 6px;
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -37,7 +39,9 @@
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  color: grey;
+  color: white;
+  background-color: #1761a0;
+  border-radius: 4px;
 }
 
 /* Add a color to the active/current link */
