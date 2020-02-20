@@ -27,4 +27,21 @@
 
 .card-skills-sub {
   padding: 32px;
+  width: 300px;
+  text-align: center;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  li:hover {
+    opacity: 0.5;
+  }
+  .list-item {
+    padding: 8px;
+    margin: 4px 0px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+  }
 }
