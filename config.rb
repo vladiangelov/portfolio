@@ -41,10 +41,12 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
+set :site_url, "/portfolio"
+
 configure :build do
   activate :minify_css
   # activate :minify_javascript
-  set :site_url, "/portfolio"
+
 end
 
 # activate :deploy do |deploy|
