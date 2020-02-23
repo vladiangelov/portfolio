@@ -9,27 +9,24 @@
   box-shadow-bottom: 2px 1px black;
   position: fixed;
   top: 0;
-  transition: all 0.3s;
-}
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .navbar-logo {
   padding-left: 32px;
   display: flex;
   align-items: center;
   font-size: 32px;
-  font-family: 'Ubuntu Condensed', cursive;
-  img {
+  font-family: 'Ubuntu Condensed', cursive; }
+  .navbar-logo img {
     width: 80px;
-    height: 40px;
-  }
-}
+    height: 40px; }
 
 .navbar-menu {
   display: flex;
   align-items: center;
   font-family: 'Ubuntu Condensed', cursive;
-  padding-right: 64px;
-}
+  padding-right: 64px; }
 
 /* Style the links inside the navigation bar */
 .navbar a {
@@ -38,23 +35,21 @@
   padding: 4px 6px;
   text-decoration: none;
   font-size: 20px;
-  color: black;
-}
+  color: black; }
 
 /* Change the color of links on hover */
 .navbar a:hover {
   color: white;
   background-color: #1761a0;
   border-radius: 4px;
-  transition: all 500ms ease;
-}
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease; }
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  color: black;
-}
+  color: black; }
 
 .fixed-nav nav {
   position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-}
+  -webkit-box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px rgba(0, 0, 0, 0.1); }

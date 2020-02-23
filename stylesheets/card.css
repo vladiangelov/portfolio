@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  margin: 16px 16px 64px 16px;
+  border-radius: 4px;
+  background-color: white; }
+  .card img {
+    width: 300px; }
+  .card p {
+    padding: 32px; }
+
+.card:hover {
+  -webkit-box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3); }
+
+.card-skills {
+  display: flex;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  margin: 16px 16px 64px 16px;
+  border-radius: 4px;
+  background-color: white;
+  justify-content: space-around; }
+
+.card-skills-sub {
+  padding: 32px;
+  width: 300px;
+  text-align: center; }
+  .card-skills-sub ul {
+    padding-left: 0; }
+  .card-skills-sub li {
+    list-style-type: none; }
+  .card-skills-sub li:hover {
+    opacity: 0.5; }
+  .card-skills-sub .list-item {
+    padding: 8px;
+    margin: 4px 0px;
+    border: 1px solid lightgrey;
+    border-radius: 4px; }
