@@ -4,7 +4,7 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
-activate :directory_indexes
+set :relative_links, true
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -45,7 +45,7 @@ configure :build do
   activate :minify_css
   # activate :minify_javascript
   activate :relative_assets
-  set :relative_links, true
+  set :site_url, "/portfolio"
 end
 
 # activate :deploy do |deploy|
