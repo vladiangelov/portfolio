@@ -6,6 +6,9 @@
   padding: 16px 8px;
   justify-content: space-between;
   box-shadow-bottom: 2px 1px black;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
 }
 
 .navbar-logo {
