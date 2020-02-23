@@ -4,7 +4,7 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
-
+activate :directory_indexes
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -12,6 +12,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -43,4 +44,10 @@ page '/*.txt', layout: false
 # configure :build do
 #   activate :minify_css
 #   activate :minify_javascript
+# end
+
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.branch = 'master'
+#   deploy.build_before = true
 # end

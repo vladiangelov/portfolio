@@ -1,15 +1,110 @@
-.card-category {
-  margin: 32px;
-  background-size: cover;
-  background-position: center;
+.view {
+  margin: 16px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-radius: 8px;
+}
+
+.view .mask {
+  width: 1000px;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(23, 97, 160, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.view img {
+  display: block;
+  position: relative;
+  object-fit: cover;
+  transition: all 0.2s linear;
+  width: 1000px;
+  height: 300px;
+}
+
+.view h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  font-family: 'Ubuntu Condensed', cursive;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view p {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
   font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: 'Ubuntu Condensed', cursive;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  bottom: 8px;
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+  transition-delay: 0.1s;
+}
+
+@media only screen and (max-width: 1000px) {
+  .view {
+    .mask {
+      width: 500px;
+      height: 300px;
+    }
+    img {
+      width: 500px;
+      height: 300px;
+    }
+  }
 }

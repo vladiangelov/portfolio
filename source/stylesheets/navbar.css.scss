@@ -1,9 +1,10 @@
 /* Add a black background color to the top navigation */
 .navbar {
+  z-index: 1;
   width: 100%;
   display: flex;
   margin: 0px;
-  padding: 16px 8px;
+  padding: 8px 8px;
   justify-content: space-between;
   box-shadow-bottom: 2px 1px black;
   position: fixed;

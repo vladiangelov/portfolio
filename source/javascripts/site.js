@@ -4,7 +4,7 @@ changeNavbarWithScroll = () => {
   document.addEventListener("scroll", (event) => {
     if (event.path[1]["scrollY"] > 0) {
       navigation_vladi.style.backgroundColor = "white";
-      navigation_vladi.style.borderBottom = "1px grey solid";
+      navigation_vladi.style.borderBottom = "1px lightgrey solid";
     } else {
       navigation_vladi.style.backgroundColor = "transparent";
       navigation_vladi.style.borderBottom = "0px";
