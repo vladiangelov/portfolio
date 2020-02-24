@@ -18,6 +18,9 @@ h1 {
 h3 {
   color: #1761a0; }
 
+p {
+  font-family: "Roboto"; }
+
 .container {
   width: 1000px;
   margin: auto; }

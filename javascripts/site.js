@@ -1,4 +1,4 @@
-// This is where it all goes :)
+// A function to change the navbar
 changeNavbarWithScroll = () => {
   const navigation_vladi = document.getElementById('navbar2');
   document.addEventListener("scroll", (event) => {
@@ -13,3 +13,4 @@ changeNavbarWithScroll = () => {
 };
 
 changeNavbarWithScroll();
+
