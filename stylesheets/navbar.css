@@ -1,1 +1,55 @@
-.navbar{z-index:1;width:100%;display:flex;margin:0px;padding:8px 8px;justify-content:space-between;box-shadow-bottom:2px 1px black;position:fixed;top:0;-webkit-transition:all 0.3s;transition:all 0.3s}.navbar-logo{padding-left:32px;display:flex;align-items:center;font-size:32px;font-family:'Ubuntu Condensed', cursive}.navbar-logo img{width:80px;height:40px}.navbar-menu{display:flex;align-items:center;font-family:'Ubuntu Condensed', cursive;padding-right:64px}.navbar a{text-align:center;margin:10px 10px;padding:4px 6px;text-decoration:none;font-size:20px;color:black}.navbar a:hover{color:white;background-color:#1761a0;border-radius:4px;-webkit-transition:all 500ms ease;transition:all 500ms ease}.navbar a.active{color:black}.fixed-nav nav{position:fixed;-webkit-box-shadow:0 5px rgba(0,0,0,0.1);box-shadow:0 5px rgba(0,0,0,0.1)}
+/* Add a black background color to the top navigation */
+.navbar {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  padding: 8px 8px;
+  justify-content: space-between;
+  box-shadow-bottom: 2px 1px black;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.navbar-logo {
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-family: 'Ubuntu Condensed', cursive; }
+  .navbar-logo img {
+    width: 80px;
+    height: 40px; }
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu Condensed', cursive;
+  padding-right: 64px; }
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  text-align: center;
+  margin: 10px 10px;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black; }
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: white;
+  background-color: #1761a0;
+  border-radius: 4px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease; }
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black; }
+
+.fixed-nav nav {
+  position: fixed;
+  -webkit-box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
