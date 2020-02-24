@@ -26,6 +26,10 @@ h3 {
   color: $base-color;
 }
 
+p {
+  font-family: $text-font;
+}
+
 .container {
   width: 1000px;
   margin: auto;
