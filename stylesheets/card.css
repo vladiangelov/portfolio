@@ -88,3 +88,13 @@
   .card-title {
     width: 90vw;
     margin: auto; } }
+
+@media only screen and (max-width: 800px) {
+  .card-contacts {
+    display: block;
+    height: auto;
+    margin: auto; }
+  .card-contacts-items {
+    width: 100%;
+    margin: 32px auto;
+    padding: 12px 0px; } }
