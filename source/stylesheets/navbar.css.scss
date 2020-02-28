@@ -23,6 +23,9 @@
     height: 40px;
   }
 }
+.navbar-menu-mobile-button {
+  display: none;
+}
 
 .navbar-menu {
   display: flex;
@@ -34,7 +37,7 @@
 /* Style the links inside the navigation bar */
 .navbar a {
   text-align: center;
-  margin: 10px 10px;
+  margin: 6px 10px;
   padding: 4px 6px;
   text-decoration: none;
   font-size: 20px;
@@ -57,4 +60,57 @@
 .fixed-nav nav {
   position: fixed;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu-mobile {
+  display: none;
+  text-align: right;
+  background-color: white;
+  position: fixed;
+  top: 64px;
+  right: 16px;
+  border: 1px black solid;
+  border-radius: 4px;
+  }
+
+  .nav-menu-mobile-item {
+    padding: 8px 32px;
+    margin: 1px;
+    a {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Ubuntu Condensed', cursive;
+    }
+  }
+
+  .navbar-logo {
+  padding-left: 16px;
+  }
+
+  .navbar-menu-mobile-button {
+    display: block;
+    h1 {
+      font-size: 32px;
+      color: black;
+      font-weight: 100;
+      margin: 6px 32px 2px 2px;
+      padding: 0px 16px 0px 16px;
+      // border: 2px solid black;
+      border-radius: 4px;
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
 }

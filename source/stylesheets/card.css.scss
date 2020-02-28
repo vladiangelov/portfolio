@@ -36,7 +36,10 @@
     list-style-type: none;
   }
   li:hover {
-    opacity: 0.5;
+    background-color: white;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    font-weight: bolder;
   }
   .list-item {
     padding: 8px;
@@ -68,5 +71,34 @@
   i {
     font-size: 32px;
     border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    display: block;
+    width: 90vw;
+    margin: 16px auto 64px auto;
+    img {
+      width: 90vw;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .card-skills {
+    display: block;
+    width: 90vw;
+    margin: 16px auto 64px auto;
+  }
+
+  .card-skills-sub {
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    overflow: auto;
+  }
+  .card-title {
+    width: 90vw;
+    margin: auto;
   }
 }
