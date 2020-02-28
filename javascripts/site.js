@@ -1,16 +1,32 @@
 // A function to change the navbar
 changeNavbarWithScroll = () => {
-  const navigation_vladi = document.getElementById('navbar2');
+  const navBar = document.getElementById('navbar2');
   document.addEventListener("scroll", (event) => {
     if (event.path[1]["scrollY"] > 0) {
-      navigation_vladi.style.backgroundColor = "white";
-      navigation_vladi.style.borderBottom = "1px lightgrey solid";
+      navBar.style.backgroundColor = "white";
+      navBar.style.borderBottom = "1px lightgrey solid";
     } else {
-      navigation_vladi.style.backgroundColor = "transparent";
-      navigation_vladi.style.borderBottom = "0px";
+      navBar.style.backgroundColor = "transparent";
+      navBar.style.borderBottom = "0px";
     };
   })
 };
 
 changeNavbarWithScroll();
 
+// Mobile menu open function
+
+openMobileMenu = () => {
+  const navMenuButton = document.querySelector('.navbar-menu-mobile-button')
+  navMenuButton.addEventListener("click", (event) => {
+    const navMenu = document.querySelector('.navbar-menu-mobile')
+    if (navMenu.style.display === "none") {
+      navMenu.style.display = "block";
+    } else {
+      navMenu.style.display = "none";
+    }
+  });
+
+}
+
+openMobileMenu();

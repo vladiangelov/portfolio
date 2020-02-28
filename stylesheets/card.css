@@ -32,7 +32,12 @@
   .card-skills-sub li {
     list-style-type: none; }
   .card-skills-sub li:hover {
-    opacity: 0.5; }
+    background-color: white;
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-weight: bolder; }
   .card-skills-sub .list-item {
     padding: 8px;
     margin: 4px 0px;
@@ -60,3 +65,26 @@
   .card-contacts-items i {
     font-size: 32px;
     border-radius: 2px; }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    display: block;
+    width: 90vw;
+    margin: 16px auto 64px auto; }
+    .card img {
+      width: 90vw;
+      height: 300px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .card-skills {
+    display: block;
+    width: 90vw;
+    margin: 16px auto 64px auto; }
+  .card-skills-sub {
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    overflow: auto; }
+  .card-title {
+    width: 90vw;
+    margin: auto; } }

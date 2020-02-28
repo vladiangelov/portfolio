@@ -27,3 +27,11 @@ p {
 
 .my-content {
   margin-top: 100px; }
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin: auto; }
+  .my-content {
+    margin-top: 100px;
+    width: 100%; } }
