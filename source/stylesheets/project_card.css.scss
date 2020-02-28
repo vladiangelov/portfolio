@@ -5,54 +5,50 @@
   text-align: center;
   cursor: default;
   border-radius: 8px;
-}
-
-.view .mask {
-  width: 1000px;
-  height: 300px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(23, 97, 160, 0.7);
-  transition: all 0.4s ease-in-out;
-}
-
-.view img {
-  display: block;
-  position: relative;
-  object-fit: cover;
-  transition: all 0.2s linear;
-  width: 1000px;
-  height: 300px;
-}
-
-.view h2 {
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 32px;
-  font-family: 'Ubuntu Condensed', cursive;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  margin: 20px 0 0 0;
-  transform: translateY(-100px);
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-.view p {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 24px;
-  position: relative;
-  color: #fff;
-  padding: 0px 20px 0px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all 0.2s linear;
+  .mask {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(23, 97, 160, 0.7);
+    transition: all 0.4s ease-in-out;
+  }
+  img {
+    display: block;
+    position: relative;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    width: 1000px;
+    height: 300px;
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 32px;
+    font-family: 'Ubuntu Condensed', cursive;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    position: relative;
+    color: #fff;
+    padding: 0px 20px 0px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
 }
 
 .view a.info {
@@ -99,12 +95,10 @@
 @media only screen and (max-width: 1000px) {
   .view {
     .mask {
-      width: 500px;
-      height: 300px;
+      width: 100%;
     }
     img {
-      width: 500px;
-      height: 300px;
+      width: 100%;
     }
   }
 }
