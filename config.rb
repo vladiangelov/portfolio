@@ -48,7 +48,7 @@ configure :build do
   # activate :minify_javascript
   # activate :relative_assets
   # set :relative_links, true
-  set :http_prefix, '/portfolio'
+  # set :http_prefix, '/portfolio'
   # activate :asset_hash
   # activate :asset_host, :host => '//vladiangelov.github.io'
 end
