@@ -1,8 +1,10 @@
 <nav class="navbar" id="navbar2">
-  <div class="navbar-logo">
-    <%= image_tag '/images/logo_small.png'%>
-    VladiAngelov
-  </div>
+  <% link_to '/index.html' do %>
+    <div class="navbar-logo">
+      <%= image_tag '/images/logo_small.png'%>
+      VladiAngelov
+    </div>
+  <% end %>
   <div class="navbar-menu">
     <%= link_to 'About', '/index.html' %>
     <%= link_to 'Projects', '/projects.html' %>
