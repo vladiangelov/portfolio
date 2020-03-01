@@ -72,6 +72,12 @@
     font-size: 32px;
     border-radius: 2px;
   }
+  a {
+    color: black;
+    &:hover {
+      color: grey;
+    }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
