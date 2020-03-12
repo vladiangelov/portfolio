@@ -34,11 +34,12 @@
   }
   li {
     list-style-type: none;
+    transition: 0.2s;
   }
   li:hover {
     background-color: white;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
+    transition: 0.2s;
     font-weight: bolder;
   }
   .list-item {
@@ -92,9 +93,10 @@
     }
   }
   .card-skills {
-    display: block;
+    display: flex;
     width: 90vw;
     margin: 16px auto 64px auto;
+    flex-direction: column;
   }
 
   .card-skills-sub {
