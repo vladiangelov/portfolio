@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .navbar {
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   display: flex;
   margin: 0px;

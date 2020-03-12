@@ -30,13 +30,15 @@
   .card-skills-sub ul {
     padding-left: 0; }
   .card-skills-sub li {
-    list-style-type: none; }
+    list-style-type: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
   .card-skills-sub li:hover {
     background-color: white;
     -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     font-weight: bolder; }
   .card-skills-sub .list-item {
     padding: 8px;
@@ -81,9 +83,10 @@
       -o-object-fit: cover;
          object-fit: cover; }
   .card-skills {
-    display: block;
+    display: flex;
     width: 90vw;
-    margin: 16px auto 64px auto; }
+    margin: 16px auto 64px auto;
+    flex-direction: column; }
   .card-skills-sub {
     width: 90%;
     margin: auto;
