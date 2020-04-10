@@ -23,7 +23,8 @@ p {
 
 .container {
   width: 1000px;
-  margin: auto; }
+  margin: auto;
+  min-height: calc(100vh - 151px); }
 
 .my-content {
   margin-top: 100px; }
