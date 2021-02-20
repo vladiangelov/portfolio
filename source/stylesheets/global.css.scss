@@ -2,6 +2,7 @@ $base-color: #1761a0;
 $secondary-color: #e07f00;
 $header-font: "Ubuntu Condensed";
 $text-font: "Roboto";
+$logo-shadow: 1px -1px 2px black;
 
 body {
   color: black;
@@ -56,4 +57,14 @@ p {
   &:hover {
     color: $secondary-color;
   }
+}
+
+#v-letter {
+  color: $base-color;
+  text-shadow: $logo-shadow;
+}
+
+#a-letter {
+  color: $secondary-color;
+  text-shadow: $logo-shadow;
 }
