@@ -1,7 +1,7 @@
 $base-color: #1761a0;
 $secondary-color: #e07f00;
-$header-font: 'Ubuntu Condensed';
-$text-font: 'Roboto';
+$header-font: "Ubuntu Condensed";
+$text-font: "Roboto";
 
 body {
   color: black;
@@ -51,3 +51,9 @@ p {
   }
 }
 
+.index-links {
+  color: $base-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
