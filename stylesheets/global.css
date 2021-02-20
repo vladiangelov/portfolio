@@ -41,3 +41,11 @@ p {
   color: #1761a0; }
   .index-links:hover {
     color: #e07f00; }
+
+#v-letter {
+  color: #1761a0;
+  text-shadow: 1px -1px 2px black; }
+
+#a-letter {
+  color: #e07f00;
+  text-shadow: 1px -1px 2px black; }
