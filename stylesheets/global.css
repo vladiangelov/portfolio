@@ -36,3 +36,8 @@ p {
   .my-content {
     margin-top: 100px;
     width: 100%; } }
+
+.index-links {
+  color: #1761a0; }
+  .index-links:hover {
+    color: #e07f00; }
