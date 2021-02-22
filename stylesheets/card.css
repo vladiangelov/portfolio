@@ -6,7 +6,9 @@
   border-radius: 4px;
   background-color: white; }
   .card img {
-    width: 300px; }
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .card p {
     padding: 32px; }
 
@@ -61,7 +63,7 @@
   width: 33%;
   text-align: center; }
   .card-contacts-items h2 {
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: "Ubuntu Condensed", cursive;
     text-transform: uppercase;
     color: #1761a0; }
   .card-contacts-items i {
