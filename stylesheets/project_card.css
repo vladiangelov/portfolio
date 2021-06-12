@@ -30,7 +30,7 @@
     text-align: center;
     position: relative;
     font-size: 32px;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: "Ubuntu Condensed", cursive;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0;
@@ -40,7 +40,7 @@
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .view p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
     font-size: 24px;
     position: relative;
@@ -59,7 +59,7 @@
   padding: 7px 14px;
   background: #000;
   color: #fff;
-  font-family: 'Ubuntu Condensed', cursive;
+  font-family: "Ubuntu Condensed", cursive;
   text-transform: uppercase;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -100,30 +100,47 @@
   height: 150px;
   overflow: hidden;
   position: absolute;
-  top: -10px;
+  top: -10px; }
+
+.ribbon-left {
   left: -10px; }
+
+.ribbon-right {
+  right: 20px; }
 
 .ribbon span {
   position: absolute;
   display: block;
   width: 150px;
   padding: 5px 0;
-  background-color: red;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
-  font: 700 10px/1 'Lato', sans-serif;
+  font: 700 10px/1 "Lato", sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
+  top: 40px; }
+
+.ribbon-left span {
+  background-color: red;
   left: -20px;
-  top: 40px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg); }
+
+.ribbon-right span {
+  background-color: #008db8;
+  right: -20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 @media only screen and (max-width: 1000px) {
   .view .mask {
     width: 100%; }
+  .view .ribbon-right {
+    right: 0px; }
+  .view .ribbon-right span {
+    right: -30px; }
   .view img {
     width: 100%; }
   .view p {
