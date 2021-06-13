@@ -144,4 +144,6 @@
   .view img {
     width: 100%; }
   .view p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .view h2 {
+    font-size: 24px; } }
