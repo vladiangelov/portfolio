@@ -1,0 +1,14 @@
+  <div class="view view-first">
+    <%= image_tag image_address %>
+    <div class="mask">
+      <% if left_ribbon %>
+        <div class="ribbon ribbon-left"><span><%= left_ribbon %></span></div>
+      <% end %>
+      <% if right_ribbon %>
+        <div class="ribbon ribbon-right"><span><%= right_ribbon %></span></div>
+      <% end %>
+      <h2><%= title %></h2>
+      <p><%= description %></p>
+      <a href=<%= external_link %> target ="blank" class="info">Go To The Page</a>
+    </div>
+  </div>

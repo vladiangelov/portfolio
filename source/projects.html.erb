@@ -3,54 +3,46 @@ title: Vladi Angelov - Projects
 ---
 <div class="my-content">
   <h1>Small Personal Projects</h1>
-  <div class="view view-first">
-    <%= image_tag '/images/weather-app.png' %>
-    <div class="mask">
-      <div class="ribbon ribbon-left"><span>In Development</span></div>
-      <div class="ribbon ribbon-right"><span>Desktop only</span></div>
-      <h2>Desktop Weather App</h2>
-      <p>A small single page React app using real weather data API</p>
-      <a href="https://weather-app-vladi.netlify.app/" target ="blank" class="info">Go To The Page</a>
-    </div>
-  </div>
-  <div class="view view-first">
-    <%= image_tag '/images/crawley_volley.jpg' %>
-    <div class="mask">
-      <div class="ribbon ribbon-left"><span>In Development</span></div>
-      <div class="ribbon ribbon-right"><span>Responsive</span></div>
-      <h2>Crawley Volleyball Club</h2>
-      <p>My solo project to build a web page for my volleyball team</p>
-      <a href="http://www.crawleyvolleyball.co.uk/" target ="blank" class="info">Go To The Page</a>
-    </div>
-  </div>
-  <div class="view view-first">
-    <%= image_tag '/images/pair_up.png' %>
-    <div class="mask">
-      <div class="ribbon ribbon-right"><span>Mobile first</span></div>
-      <h2>Pair Up Card Game</h2>
-      <p>A small vanilla JS project with Django backend</p>
-      <a href="https://pair-up-game.herokuapp.com/" target ="blank" class="info">Go To The Page</a>
-    </div>
-  </div>
-  <div class="view view-first">
-    <%= image_tag '/images/findyourteam.jpg' %>
-    <div class="mask">
-      <div class="ribbon ribbon-left"><span>In Development</span></div>
-      <div class="ribbon ribbon-right"><span>Desktop only</span></div>
-      <h2>findYourTeam (MVP)</h2>
-      <p>My final project at Le Wagon - eSports social team platform</p>
-      <a href="http://www.gofindyourteam.com/" target ="blank" class="info">Go To The Page</a>
-    </div>
-  </div>
-  <div class="view view-first">
-    <%= image_tag '/images/cloudchef.jpg' %>
-    <div class="mask">
-      <div class="ribbon ribbon-right"><span>Desktop only</span></div>
-      <h2>CloudChef (MVP)</h2>
-      <p>My first team project at Le Wagon - home cooking for hire</p>
-      <a href="https://cloudchef.herokuapp.com" target ="blank" class="info">Go To The Page</a>
-    </div>
-  </div>
+  <%= partial(:'partials/project_card', locals: {
+      image_address: '/images/weather-app.png',
+      left_ribbon: 'In Development',
+      right_ribbon: 'Desktop Only',
+      title: 'Desktop Weather App',
+      description: 'A small single page React app using real weather data API',
+      external_link: 'https://weather-app-vladi.netlify.app/'
+    }) %>
+  <%= partial(:'partials/project_card', locals: {
+      image_address: '/images/crawley_volley.jpg',
+      left_ribbon: 'In Development',
+      right_ribbon: 'Responsive',
+      title: 'Crawley Volleyball Club',
+      description: 'My solo project to build a web page for my volleyball team',
+      external_link: 'http://www.crawleyvolleyball.co.uk/'
+    }) %>
+  <%= partial(:'partials/project_card', locals: {
+      image_address: '/images/pair_up.png',
+      left_ribbon: nil,
+      right_ribbon: 'Mobile first',
+      title: 'Pair Up Card Game',
+      description: 'A small vanilla JS project with Django backend',
+      external_link: 'https://pair-up-game.herokuapp.com/'
+    }) %>
+  <%= partial(:'partials/project_card', locals: {
+      image_address: '/images/findyourteam.jpg',
+      left_ribbon: nil,
+      right_ribbon: 'Desktop Only',
+      title: 'findYourTeam (MVP)',
+      description: 'My final project at Le Wagon - eSports social team platform',
+      external_link: 'http://www.gofindyourteam.com/'
+    }) %>
+  <%= partial(:'partials/project_card', locals: {
+      image_address: '/images/cloudchef.jpg',
+      left_ribbon: nil,
+      right_ribbon: 'Desktop Only',
+      title: 'CloudChef (MVP)',
+      description: 'My first team project at Le Wagon - home cooking for hire',
+      external_link: 'https://cloudchef.herokuapp.com'
+    }) %>
 </div>
 
 
