@@ -1,48 +1,46 @@
 ---
 title: Vladi Angelov - Projects
+projects:
+  - image_address: /images/weather-app.png
+    left_ribbon: In Development
+    right_ribbon: Desktop Only
+    title: Desktop Weather App
+    description: A small single page React app using real weather data API
+    external_link: https://weather-app-vladi.netlify.app/
+  - image_address: /images/crawley_volley.jpg
+    left_ribbon: In Development
+    right_ribbon: Responsive
+    title: Crawley Volleyball Club
+    description: My solo project to build a web page for my volleyball team
+    external_link: http://www.crawleyvolleyball.co.uk/
+  - image_address: /images/pair_up.png
+    right_ribbon: Mobile first
+    title: Pair Up Card Game
+    description: A small vanilla JS project with Django backend
+    external_link: https://pair-up-game.herokuapp.com/
+  - image_address: /images/findyourteam.jpg
+    right_ribbon: Desktop Only
+    title: findYourTeam (MVP)
+    description: My final project at Le Wagon - eSports social team platform
+    external_link: http://www.gofindyourteam.com/
+  - image_address: /images/cloudchef.jpg
+    right_ribbon: Desktop Only
+    title: CloudChef (MVP)
+    description: My first team project at Le Wagon - home cooking for hire
+    external_link: https://cloudchef.herokuapp.com
 ---
 <div class="my-content">
   <h1>Small Personal Projects</h1>
-  <%= partial(:'partials/project_card', locals: {
-      image_address: '/images/weather-app.png',
-      left_ribbon: 'In Development',
-      right_ribbon: 'Desktop Only',
-      title: 'Desktop Weather App',
-      description: 'A small single page React app using real weather data API',
-      external_link: 'https://weather-app-vladi.netlify.app/'
-    }) %>
-  <%= partial(:'partials/project_card', locals: {
-      image_address: '/images/crawley_volley.jpg',
-      left_ribbon: 'In Development',
-      right_ribbon: 'Responsive',
-      title: 'Crawley Volleyball Club',
-      description: 'My solo project to build a web page for my volleyball team',
-      external_link: 'http://www.crawleyvolleyball.co.uk/'
-    }) %>
-  <%= partial(:'partials/project_card', locals: {
-      image_address: '/images/pair_up.png',
-      left_ribbon: nil,
-      right_ribbon: 'Mobile first',
-      title: 'Pair Up Card Game',
-      description: 'A small vanilla JS project with Django backend',
-      external_link: 'https://pair-up-game.herokuapp.com/'
-    }) %>
-  <%= partial(:'partials/project_card', locals: {
-      image_address: '/images/findyourteam.jpg',
-      left_ribbon: nil,
-      right_ribbon: 'Desktop Only',
-      title: 'findYourTeam (MVP)',
-      description: 'My final project at Le Wagon - eSports social team platform',
-      external_link: 'http://www.gofindyourteam.com/'
-    }) %>
-  <%= partial(:'partials/project_card', locals: {
-      image_address: '/images/cloudchef.jpg',
-      left_ribbon: nil,
-      right_ribbon: 'Desktop Only',
-      title: 'CloudChef (MVP)',
-      description: 'My first team project at Le Wagon - home cooking for hire',
-      external_link: 'https://cloudchef.herokuapp.com'
-    }) %>
+  <% current_page.data.projects.each do |project| %>
+    <%= partial(:'partials/project_card', locals: {
+        image_address: project.image_address,
+        left_ribbon: project.left_ribbon,
+        right_ribbon: project.right_ribbon,
+        title: project.title,
+        description: project.description,
+        external_link: project.external_link
+      }) %>
+  <% end %>
 </div>
 
 
