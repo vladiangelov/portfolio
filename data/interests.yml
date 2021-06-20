@@ -1,0 +1,12 @@
+- name: Volleyball
+  image_address: /images/volleyball.jpeg
+  description: When I was a teenager, I used to play volleyball quite seriously for a few years. (Un)luckily I never grew up tall enough to be considered for any professional teams.<br><br>I re-started playing in England after quite a few years of inactivity, where I co-founded a Volleyball Club in Crawley and I am currently competing at amateur level in the local Surrey and Sussex Volleyball Leagues.
+- name: Skiing
+  image_address: /images/skiing.png
+  description: I only started skiing very recently, but this is by far my favorite hobby now. I love the Alps, especially the Dolomites in Italy and the area around Chamonix in France - even in the summer they are great places for hiking and relaxing away from the busy cities.<br><br>Or maybe I am really in for the apres ski drinks afterwards and the amazing food on the slopes?
+- name: Competitive Gaming
+  image_address: /images/gaming.jpg
+  description: My first ever attempt at joining the competitive gaming scene was back in 2001, when I discovered an amazing game called StarCraft and started visiting the local internet cafe way too often.<br><br>8 years and tens of tournaments later (I was lucky enough to visit Greece, Serbia, the Czech Republic and many towns in Bulgaria), I decided that this is not something you can make a career out of.<br>(2020 edit - Boy, was I wrong!)
+- name: Table football
+  image_address: /images/table_football.jpeg
+  description: I used to spend almost all my pocket money on table football back in high-school. I am not sure what I learned or earned out of this, but it was loads of fun!<br><br>About 15 years later (in 2019), I won the table football tournament organised by the social committee in my company - maybe that is what it was all about?
