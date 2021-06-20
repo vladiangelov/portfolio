@@ -2,8 +2,11 @@ body {
   color: black;
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  background: -webkit-gradient(linear, right top, left bottom, from(#969696), to(white));
-  background: linear-gradient(to left bottom, #969696, white); }
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 50%;
+  background-size: 100% 100%; }
 
 a {
   text-decoration: none; }

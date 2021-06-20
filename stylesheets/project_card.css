@@ -4,7 +4,9 @@
   position: relative;
   text-align: center;
   cursor: default;
-  border-radius: 8px; }
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3); }
   .view .mask {
     width: 1000px;
     height: 300px;
