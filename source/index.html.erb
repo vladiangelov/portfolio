@@ -1,5 +1,12 @@
 ---
 title: Vladi Angelov
+skill_categories:
+  - name: Web Development
+    slug: web_dev
+  - name: Software
+    slug: software
+  - name: Other
+    slug: other
 ---
 <div class="my-content">
   <div>
@@ -22,41 +29,19 @@ title: Vladi Angelov
     <h1 class="card-title">Skills</h1>
   </div>
   <div class="card-skills">
-    <div class="card-skills-sub">
-      <h3>Web Development</h3>
-      <ul>
-        <% data.skills.web_dev.each do |skill| %>
-          <%= partial(:'partials/skill_card', locals: {
-            title: skill.title,
-            image_address: skill.image_address,
-            image_address_two: skill.image_address_two
-          }) %>
-        <% end %>
-      </ul>
-    </div>
-    <div class="card-skills-sub">
-      <h3>Software</h3>
-      <ul>
-        <% data.skills.software.each do |skill| %>
-          <%= partial(:'partials/skill_card', locals: {
-            title: skill.title,
-            image_address: skill.image_address,
-            image_address_two: skill.image_address_two
-          }) %>
-        <% end %>
-      </ul>
-    </div>
-    <div class="card-skills-sub">
-      <h3>Other</h3>
-      <ul>
-        <% data.skills.other.each do |skill| %>
-          <%= partial(:'partials/skill_card', locals: {
-            title: skill.title,
-            image_address: skill.image_address,
-            image_address_two: skill.image_address_two
-          }) %>
-        <% end %>
-      </ul>
-    </div>
+    <% current_page.data.skill_categories.each do |category| %>
+      <div class="card-skills-sub">
+        <h3><%= category.name %></h3>
+        <ul>
+          <% data.skills[category.slug].each do |skill| %>
+            <%= partial(:'partials/skill_card', locals: {
+              title: skill.title,
+              image_address: skill.image_address,
+              image_address_two: skill.image_address_two
+            }) %>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
   </div>
 </div>
