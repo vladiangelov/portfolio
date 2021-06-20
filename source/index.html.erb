@@ -1,5 +1,60 @@
 ---
 title: Vladi Angelov
+skills:
+  web_dev:
+    - title: HTML
+      image_address: /images/skills/html.png
+    - title: CSS / Sass
+      image_address: /images/skills/css.png
+      image_address_two: /images/skills/sass.png
+    - title: JavaScript (ES6)
+      image_address: /images/skills/js.png
+    - title: Bootstrap
+      image_address: /images/skills/bootstrap.png
+    - title: Ruby
+      image_address: /images/skills/ruby.webp
+    - title: SQL
+      image_address: /images/skills/sql.svg
+    - title: Ruby on Rails
+      image_address: /images/skills/rails.png
+    - title: PostgreSQL
+      image_address: /images/skills/postgres.png
+    - title: React.js
+      image_address: /images/skills/react.png
+    - title: Redux
+      image_address: /images/skills/redux.png
+  software:
+    - title: Postman
+      image_address: /images/skills/postman.png
+    - title: git
+      image_address: /images/skills/git.png
+    - title: GitHub / GitLab
+      image_address: /images/skills/github.svg
+    - title: Asana / Trello
+      image_address: /images/skills/trello.png
+    - title: Jira
+      image_address: /images/skills/jira.png
+    - title: Figma / Zeplin
+      image_address: /images/skills/figma.webp
+    - title: Heroku / Netlify
+      image_address: /images/skills/heroku.png
+  other:
+    - title: Python
+      image_address: /images/skills/python.png
+    - title: Octave / Matlab
+      image_address: /images/skills/octave.png
+    - title: REST APIs
+      image_address: /images/skills/api.png
+    - title: GraphQL
+      image_address: /images/skills/graphql.png
+    - title: minitest / RSpec
+      image_address: /images/skills/tdd.png
+    - title: MiddleMan
+      image_address: /images/skills/middleman.png
+    - title: Data Analysis
+      image_address: /images/skills/data_analysis.png
+    - title: Data Processing
+      image_address: /images/skills/data_processing.png
 ---
 <div class="my-content">
   <div>
@@ -25,185 +80,37 @@ title: Vladi Angelov
     <div class="card-skills-sub">
       <h3>Web Development</h3>
       <ul>
-        <li class="tooltip list-item">
-            HTML
-            <div class="bottom">
-                <%= image_tag '/images/skills/html.png', width: 75, height: 75%>
-                <p>I have been using HTML since the late 90s - familiar with most of it, however there is so much behind the scenes that I seem to be learning something new almost every day.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            CSS / Sass
-            <div class="bottom">
-                <%= image_tag '/images/skills/css.png', width: 75, height: 75%>
-                <%= image_tag '/images/skills/sass.png', width: 75, height: 75%>
-                <p>I have been getting a lot better with CSS during the Le Wagon coding bootcamp. That's where I discovered sass/scss too and I have never gone back to normal css since.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            JavaScript (ES6)
-            <div class="bottom">
-                <%= image_tag '/images/skills/js.png', width: 75, height: 75%>
-                <p>Mainly experienced with vanilla JS and front-end - selecting DOM elements, adding event listeners, using callback functions, etc. Some very basic experience with Node. Trying to learn React next.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Bootstrap
-            <div class="bottom">
-                <%= image_tag '/images/skills/bootstrap.png', width: 75, height: 75%>
-                <p>Not the biggest fan of Bootstrap (prefer my own CSS), however I have still used it on a couple of small projects, where timing was very important.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Ruby
-            <div class="bottom">
-                <%= image_tag '/images/skills/ruby.webp', width: 75, height: 75%>
-                <p>The first object-oriented language that I have built some proficiency in, although again there is always a lot more to learn out there.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            SQL
-            <div class="bottom">
-                <%= image_tag '/images/skills/sql.svg', width: 75, height: 75%>
-                <p>I have been using SQL in my work environment, as well as intensively during the coding bootcamp. It a lot more behind the scenes when using ORM (i.e. ActiveRecord), however still important to know for debugging.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Ruby on Rails
-            <div class="bottom">
-                <%= image_tag '/images/skills/rails.png', width: 75, height: 75%>
-                <p>All of my web applications so far are built using Rails. I have experience with a lot of the main/built-in functionality, as well as specific gems like devise, pundit, sidekiq, pgsearch, etc. </p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            PostgreSQL
-            <div class="bottom">
-                <%= image_tag '/images/skills/postgres.png', width: 75, height: 75%>
-                <p>Limited knowledge - all of my dynamic web apps are built using PostgreSQL.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            React.js
-            <div class="bottom">
-                <%= image_tag '/images/skills/react.png', width: 75, height: 75%>
-                <p>I just started learning React, but already have some basic knowledge - I definitely prefer it over Angular and it is still more popular than Vue.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Redux
-            <div class="bottom">
-                <%= image_tag '/images/skills/redux.png', width: 75, height: 75%>
-                <p>Obviously React and Redux go hand in hand, so I have gained some basic knowledge of Redux too.</p>
-            </div>
-        </li>
+        <% current_page.data.skills.web_dev.each do |skill| %>
+          <%= partial(:'partials/skill_card', locals: {
+            title: skill.title,
+            image_address: skill.image_address,
+            image_address_two: skill.image_address_two
+          }) %>
+        <% end %>
       </ul>
     </div>
     <div class="card-skills-sub">
       <h3>Software</h3>
       <ul>
-        <li class="tooltip list-item">
-            Heroku
-            <div class="bottom">
-                <%= image_tag '/images/skills/heroku.png', width: 75, height: 75%>
-                <p>All my team-based and solo web applications so far are being deployed on heroku.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            git
-            <div class="bottom">
-                <%= image_tag '/images/skills/git.png', width: 75, height: 75%>
-                <p>Familiar with most of the basic functionality of git - setting up, branching, merging, stashing, comparing and reseting.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            GitHub
-            <div class="bottom">
-                <%= image_tag '/images/skills/github.svg', width: 75, height: 75%>
-                <p>I have intermediate proficiency in GitHub - can create a repository, push/pull/merge, fork, review and create issues. Also this website is hosted on gh-pages.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Jira
-            <div class="bottom">
-                <%= image_tag '/images/skills/jira.png', width: 75, height: 75%>
-                <p>My experience with Jira is limited to configuring, creating and using Scrum and Kanban Boards in data processing.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Trello
-            <div class="bottom">
-                <%= image_tag '/images/skills/trello.png', width: 75, height: 75%>
-                <p>I have used Trello's Kanban Boards for all of my team-based web apps so far and also for some personal projects.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Figma
-            <div class="bottom">
-                <%= image_tag '/images/skills/figma.webp', width: 75, height: 75%>
-                <p>All of my projects so far are designed using Figma.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Postman
-            <div class="bottom">
-                <%= image_tag '/images/skills/postman.png', width: 75, height: 75%>
-                <p>A very useful tool for testing and building APIs.</p>
-            </div>
-        </li>
+        <% current_page.data.skills.software.each do |skill| %>
+          <%= partial(:'partials/skill_card', locals: {
+            title: skill.title,
+            image_address: skill.image_address,
+            image_address_two: skill.image_address_two
+          }) %>
+        <% end %>
       </ul>
     </div>
     <div class="card-skills-sub">
-      <h3>Others</h3>
+      <h3>Other</h3>
       <ul>
-        <li class="tooltip list-item">
-            Python (basic)
-            <div class="bottom">
-                <%= image_tag '/images/skills/python.png', width: 75, height: 75%>
-                <p>I have used Python occasionally for data science / data processing purposes. Given its similarity with Ruby, it will definitely be the next language for me to master.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Octave / Matlab
-            <div class="bottom">
-                <%= image_tag '/images/skills/octave.png', width: 75, height: 75%>
-                <p>I have used Octave and Matlab (mainly the former, since it is free) during my studies and very rarely afterwards.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            APIs
-            <div class="bottom">
-                <%= image_tag '/images/skills/api.png', width: 75, height: 75%>
-                <p>I have built a few simple web apps, which communicate with RESTful APIs provided by Google, Mapbox, Algolia and of course Le Wagon.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            TDD / RSpec
-            <div class="bottom">
-                <%= image_tag '/images/skills/tdd.png', width: 75, height: 75%>
-                <p>Aiming to build feature and unit tests using RSpec or minitest for all my web apps, most of which however after implementing the features. I am just starting with TDD and have built some simple apps using TDD.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            MiddleMan
-            <div class="bottom">
-                <%= image_tag '/images/skills/middleman.png', width: 75, height: 75%>
-                <p>This is my favorite static website builder, since it resembles Rails so much. This particular site is built using Middleman!</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Data Analysis
-            <div class="bottom">
-                <%= image_tag '/images/skills/data_analysis.png', width: 75, height: 75%>
-                <p>I love analysing data - it will always be one of my true passions.</p>
-            </div>
-        </li>
-        <li class="tooltip list-item">
-            Data Processing
-            <div class="bottom">
-                <%= image_tag '/images/skills/data_processing.png', width: 75, height: 75%>
-                <p>I have been working in seismic data processing for nearly 10 years and I am very experienced in that.</p>
-            </div>
-        </li>
+        <% current_page.data.skills.other.each do |skill| %>
+          <%= partial(:'partials/skill_card', locals: {
+            title: skill.title,
+            image_address: skill.image_address,
+            image_address_two: skill.image_address_two
+          }) %>
+        <% end %>
       </ul>
     </div>
   </div>
