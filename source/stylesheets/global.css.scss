@@ -8,7 +8,11 @@ body {
   color: black;
   margin: 0px;
   font-family: $text-font, sans-serif;
-  background: linear-gradient(to left bottom, rgb(150, 150, 150), white);
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 50%;
+  background-size: 100% 100%;
 }
 
 a {
