@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   font-size: 32px;
-  font-family: 'Ubuntu Condensed', cursive;
+  font-family: "Ubuntu Condensed", cursive;
   img {
     width: 80px;
     height: 40px;
@@ -30,7 +30,7 @@
 .navbar-menu {
   display: flex;
   align-items: center;
-  font-family: 'Ubuntu Condensed', cursive;
+  font-family: "Ubuntu Condensed", cursive;
   padding-right: 64px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .navbar-menu-mobile {
-  display: none;
+  transform: scale(0);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -72,7 +72,8 @@
   }
 
   .navbar-menu-mobile {
-    display: none;
+    transform: scale(0);
+    transition: transform 0.2s;
     text-align: right;
     background-color: white;
     position: fixed;
@@ -83,6 +84,10 @@
     border-radius: 4px;
   }
 
+  .show-navbar-menu-mobile {
+    transform: scale(1);
+  }
+
   .nav-menu-mobile-item {
     padding: 8px 32px;
     margin: 1px;
@@ -90,7 +95,7 @@
       font-size: 24px;
       text-decoration: none;
       color: black;
-      font-family: 'Ubuntu Condensed', cursive;
+      font-family: "Ubuntu Condensed", cursive;
     }
   }
 
@@ -99,6 +104,7 @@
   }
 
   .navbar-menu-mobile-button {
+    cursor: pointer;
     display: block;
     h1 {
       font-size: 32px;
@@ -106,7 +112,6 @@
       font-weight: 100;
       margin: 12px 32px 2px 2px;
       padding: 0px 16px 0px 16px;
-      // border: 2px solid black;
       border-radius: 4px;
     }
   }
