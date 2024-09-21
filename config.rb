@@ -53,8 +53,8 @@ configure :build do
   # activate :asset_host, :host => '//vladiangelov.github.io'
 end
 
-# activate :deploy do |deploy|
-#   deploy.method = :git
-#   deploy.branch = 'master'
-#   deploy.build_before = true
-# end
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
+end
