@@ -44,13 +44,13 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
-  # activate :minify_css
-  # activate :minify_javascript
-  # activate :relative_assets
-  # set :relative_links, true
-  # set :http_prefix, '/portfolio'
-  # activate :asset_hash
-  # activate :asset_host, :host => '//vladiangelov.github.io'
+  activate :minify_css
+  activate :minify_javascript
+  activate :relative_assets
+  set :relative_links, true
+  set :http_prefix, ENV['BASE_URL'] || "/"
+  activate :asset_hash
+  activate :asset_host, :host => '//vladiangelov.github.io'
 end
 
 # activate :deploy do |deploy|
