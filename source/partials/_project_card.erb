@@ -1,6 +1,6 @@
   <div class="view view-first">
     <%= image_tag image_address %>
-    <div class="mask">
+    <div class="layout">
       <% if left_ribbon %>
         <div class="ribbon ribbon-left"><span><%= left_ribbon %></span></div>
       <% end %>
@@ -9,6 +9,7 @@
       <% end %>
       <h2><%= title %></h2>
       <p><%= description %></p>
-      <a href=<%= external_link %> target ="blank" class="info">Go To The Page</a>
+      <p><a href=<%= external_link %> target ="blank" class="info">Go To The Page</a><p>
     </div>
+    <div class="mask"></div>
   </div>

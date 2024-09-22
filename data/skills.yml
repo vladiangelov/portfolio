@@ -1,53 +1,72 @@
-web_dev:
-  - title: HTML
-    image_address: /images/skills/html.png
-  - title: CSS / Sass
-    image_address: /images/skills/css.png
-    image_address_two: /images/skills/sass.png
-  - title: JavaScript (ES6)
-    image_address: /images/skills/js.png
-  - title: Bootstrap
-    image_address: /images/skills/bootstrap.png
+backend_development:
+  - title: Ruby on Rails
+    image_address: /images/skills/rails.png
   - title: Ruby
     image_address: /images/skills/ruby.webp
   - title: SQL
     image_address: /images/skills/sql.svg
-  - title: Ruby on Rails
-    image_address: /images/skills/rails.png
   - title: PostgreSQL
     image_address: /images/skills/postgres.png
-  - title: React.js
-    image_address: /images/skills/react.png
-  - title: Redux
-    image_address: /images/skills/redux.png
-software:
-  - title: Postman
-    image_address: /images/skills/postman.png
-  - title: git
-    image_address: /images/skills/git.png
-  - title: GitHub / GitLab
-    image_address: /images/skills/github.svg
-  - title: Asana / Trello
-    image_address: /images/skills/trello.png
-  - title: Jira
-    image_address: /images/skills/jira.png
-  - title: Figma / Zeplin
-    image_address: /images/skills/figma.webp
-  - title: Heroku / Netlify
-    image_address: /images/skills/heroku.png
-other:
-  - title: Python
-    image_address: /images/skills/python.png
-  - title: Octave / Matlab
-    image_address: /images/skills/octave.png
+  - title: MySQL
+    image_address: /images/skills/mysql-logo.svg
   - title: REST APIs
     image_address: /images/skills/api.png
   - title: GraphQL
     image_address: /images/skills/graphql.png
-  - title: minitest / RSpec
+frontend_development:
+  - title: React
+    image_address: /images/skills/react.png
+  - title: JavaScript
+    image_address: /images/skills/js.png
+  - title: HTML
+    image_address: /images/skills/html.png
+  - title: CSS / SCSS
+    image_address: /images/skills/css.png
+  - title: Bootstrap
+    image_address: /images/skills/bootstrap.png
+  - title: Styled Components
+    image_address: /images/skills/styled-components.png
+  - title: Redux
+    image_address: /images/skills/redux.png
+tools_platforms:
+  - title: Postman
+    image_address: /images/skills/postman.png
+  - title: Figma / Zeplin
+    image_address: /images/skills/figma.webp
+  - title: Heroku / Netlify
+    image_address: /images/skills/heroku.png
+project_management:
+  - title: Asana / Trello
+    image_address: /images/skills/trello.png
+  - title: Jira
+    image_address: /images/skills/jira.png
+  - title: ClickUp
+    image_address: /images/skills/clickup-logo.webp
+  - title: Notion
+    image_address: /images/skills/notion-logo.png
+version_control:
+  - title: Git
+    image_address: /images/skills/git.png
+  - title: GitHub
+    image_address: /images/skills/github.svg
+  - title: GitLab
+    image_address: /images/skills/gitlab-logo.webp
+testing_qa:
+  - title: Cypress
+    image_address: /images/skills/cypress-logo.png
+  - title: Jest
+    image_address: /images/skills/jest-logo.png
+  - title: Capybara
+    image_address: /images/skills/capybara-logo.jpeg
+  - title: Cucumber
+    image_address: /images/skills/cucumber-logo.png
+  - title: Minitest / RSpec
     image_address: /images/skills/tdd.png
-  - title: MiddleMan
-    image_address: /images/skills/middleman.png
+data_analysis:
+  - title: Python
+    image_address: /images/skills/python.png
+  - title: Octave / Matlab
+    image_address: /images/skills/octave.png
   - title: Data Analysis
     image_address: /images/skills/data_analysis.png
   - title: Data Processing

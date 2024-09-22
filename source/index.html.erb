@@ -1,12 +1,20 @@
 ---
 title: Vladi Angelov
 skill_categories:
-  - name: Web Development
-    slug: web_dev
-  - name: Software
-    slug: software
-  - name: Other
-    slug: other
+  - name: Backend development
+    slug: backend_development
+  - name: Frontend development
+    slug: frontend_development
+  - name: Tools & platforms
+    slug: tools_platforms
+  - name: Project management
+    slug: project_management
+  - name: Version control
+    slug: version_control
+  - name: Testing & QA
+    slug: testing_qa
+  - name: Data analysis
+    slug: data_analysis
 ---
 <div class="my-content">
   <div>
@@ -29,19 +37,21 @@ skill_categories:
   <div>
     <h1 class="card-title">Skills</h1>
   </div>
-  <div class="card-skills">
+  <div class="skills-section">
     <% current_page.data.skill_categories.each do |category| %>
-      <div class="card-skills-sub">
-        <h3><%= category.name %></h3>
-        <ul>
+      <h2 class="skills-category"><%= category.name %></h2>
+      <div class="skills-list">
           <% data.skills[category.slug].each do |skill| %>
-            <%= partial(:'partials/skill_card', locals: {
-              title: skill.title,
-              image_address: skill.image_address,
-              image_address_two: skill.image_address_two
-            }) %>
-          <% end %>
-        </ul>
+          <div class="skill-card">
+            <div class="skill-image">
+              <img src="<%= skill[:image_address] %>" alt="<%= skill[:title] %>">
+              <% if skill[:image_address_two] %>
+                <img src="<%= skill[:image_address_two] %>" alt="<%= skill[:title] %>">
+              <% end %>
+            </div>
+            <p class="skill-title"><%= skill[:title] %></p>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>
