@@ -35,7 +35,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Build with Middleman
-        run: bundle exec middleman build
+        run: bundle exec middleman build --verbose
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
           NO_CONTRACTS: true
