@@ -48,8 +48,8 @@ configure :build do
   # activate :minify_javascript
   activate :relative_assets
   set :relative_links, true
-  set :http_prefix, ENV['BASE_URL'] || "/"
-  activate :asset_hash
+  # set :http_prefix, ENV['BASE_URL'] || "/"
+  # activate :asset_hash
   # activate :asset_host, :host => '//vladiangelov.github.io'
 end
 
