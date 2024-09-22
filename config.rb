@@ -50,7 +50,7 @@ configure :build do
   set :relative_links, true
   set :http_prefix, ENV['BASE_URL'] || "/"
   activate :asset_hash
-  activate :asset_host, :host => '//vladiangelov.github.io'
+  # activate :asset_host, :host => '//vladiangelov.github.io'
 end
 
 # activate :deploy do |deploy|
